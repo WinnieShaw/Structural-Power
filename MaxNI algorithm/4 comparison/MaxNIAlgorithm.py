@@ -187,8 +187,6 @@ df = pd.DataFrame(data)
 df.to_csv(file_path, index=False)
 
 print(maxNI)
-print(BA_graph)
-print(BA_graph,f'Original NI={maxNI}',f'{BA_graph}',f'{file_path_BA_matrix}')
 
 adj_matrix = nx.to_pandas_adjacency(BA_graph, weight='weight', dtype=float)
 
